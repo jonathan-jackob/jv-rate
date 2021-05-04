@@ -7,9 +7,13 @@
     "start": "webpack --mode development --config config/webpack.config.js --watch",
     "build": "webpack --mode production --config config/webpack.config.js --progress",
     "watch": "webpack --mode production --config config/webpack.config.js --watch",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build && npm version patch"
   },
   "author": "Jonathan Jacob Verdugo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jonathan-jackob/jv-rate"
+  },
   "keywords": [
     "react",
     "rate",
