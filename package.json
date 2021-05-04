@@ -1,0 +1,44 @@
+{
+  "name": "jv-rate",
+  "version": "1.0.3",
+  "description": "Rate básico para react",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "webpack --mode development --config config/webpack.config.js --watch",
+    "build": "webpack --mode production --config config/webpack.config.js --progress",
+    "watch": "webpack --mode production --config config/webpack.config.js --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "Jonathan Jacob Verdugo",
+  "keywords": [
+    "react",
+    "rate",
+    "basico",
+    "hooks"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^7.1.5",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^5.2.4",
+    "eslint": "^7.25.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-watch": "^7.0.0",
+    "file-loader": "^6.2.0",
+    "proptypes": "^1.1.0",
+    "react": "^17.0.2",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.6.0"
+  },
+  "peerDependencies": {
+    "react": "^16.6.0 || ^17"
+  }
+}
